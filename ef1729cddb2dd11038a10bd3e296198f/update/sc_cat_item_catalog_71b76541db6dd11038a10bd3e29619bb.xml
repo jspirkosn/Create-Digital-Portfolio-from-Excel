@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Copy of Build a New Service Taxonomy">71b72541db6dd11038a10bd3e29619dd</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:35:28</sys_created_on>
+        <sys_id>71b76541db6dd11038a10bd3e29619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Copy of Build a New Service Taxonomy</sys_name>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_71b76541db6dd11038a10bd3e29619bb</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:35:28</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

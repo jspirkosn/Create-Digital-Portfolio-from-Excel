@@ -1,0 +1,1794 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>86218246dbc9d55057066b6d139619d8</copied_from>
+        <copied_from_name>Parse Excel Portfolio File</copied_from_name>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>parse_excel_file</internal_name>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"","reference_display":"","base_type":"file_attachment","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.excel_file}}","label":"action➛Excel File ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5a0a3766-3d09-49d6-88d1-496466e024ac"}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].data.Taxonomy_Node}}","label":"step➛Script step➛data➛Taxonomy Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].service}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].variable1}}","label":"step➛Script step➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Tax_Nodes.variable_child0.variable_child0_child1}}","label":"step➛Script step➛Tax Nodes➛variable_child0➛variable_child0_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Tax_Nodes}}","label":"step➛Script step➛Tax Nodes","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Tax_Nodes.Tax_Node}}","label":"step➛Script step➛Tax Nodes➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].services}}","label":"step➛Script step➛Services","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Services.Service}}","label":"step➛Script step➛Services➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Service_Offerings}}","label":"step➛Script step➛Service Offerings","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Services}}","label":"step➛Script step➛Services","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Service_Offerings.Service_Offering}}","label":"step➛Script step➛Service Offerings➛Service Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node}}","label":"step➛Script step➛Node","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.node_child1}}","label":"step➛Script step➛Node➛Node_child1","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Tax_Nodes1}}","label":"step➛Script step➛Node➛Tax Nodes","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_nodes}}","label":"step➛Script step➛Node➛Tax Nodes","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_nodes.Tax_Node}}","label":"step➛Script step➛Node➛Tax Nodes➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_nodes.tax_node}}","label":"step➛Script step➛Node➛Tax Nodes➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.node_child2}}","label":"step➛Script step➛Node➛Node_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Services3}}","label":"step➛Script step➛Node➛Services","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Tax_Node}}","label":"step➛Script step➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_node}}","label":"step➛Script step➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Service}}","label":"step➛Script step➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.service}}","label":"step➛Script step➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.node_child3}}","label":"step➛Script step➛Node➛Node_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Offering}}","label":"step➛Script step➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.offering}}","label":"step➛Script step➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].a}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Nodes}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Nodes11}}","label":"step➛Script step➛Nodes","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes}}","label":"step➛Script step➛Nodes","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.Node9}}","label":"step➛Script step➛Nodes➛Node","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node}}","label":"step➛Script step➛Nodes➛Node","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.node_child1}}","label":"step➛Script step➛Nodes➛Node➛Node_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Tax_Node}}","label":"step➛Script step➛Nodes➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.tax_node}}","label":"step➛Script step➛Nodes➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.node_child2}}","label":"step➛Script step➛Nodes➛Node➛Node_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Service}}","label":"step➛Script step➛Nodes➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.service}}","label":"step➛Script step➛Nodes➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.node_child3}}","label":"step➛Script step➛Nodes➛Node➛Node_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Offering}}","label":"step➛Script step➛Nodes➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.offering}}","label":"step➛Script step➛Nodes➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Tax}}","label":"step➛Script step➛Nodes➛Node➛Tax","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.tax}}","label":"step➛Script step➛Nodes➛Node➛Tax","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>793ca549db6dd11038a10bd3e2961921</master_snapshot>
+        <name>Parse Excel File</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>060965c1db6dd11038a10bd3e296198c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Parse Excel File</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_060965c1db6dd11038a10bd3e296198c</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:10</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=060965c1db6dd11038a10bd3e296198c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=060965c1db6dd11038a10bd3e296198c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>060965c1db6dd11038a10bd3e296198c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>2a09a5c1db6dd11038a10bd3e296194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Nodes">1a09a5c1db6dd11038a10bd3e296191a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>060965c1db6dd11038a10bd3e296198c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>ea09a5c1db6dd11038a10bd3e296194f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:07</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD1e0965c1166dd110540fc7c5924a1bea":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD1e0965c1166dd110540fc7c5924a1bea.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"9d6a5b99-d056-40b6-832d-7e721e2325e7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1e0965c1166dd110540fc7c5924a1bea\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">160965c1db6dd11038a10bd3e29619ef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=060965c1db6dd11038a10bd3e296198c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>nodes</field>
+        <id>060965c1db6dd11038a10bd3e296198c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>2209a5c1db6dd11038a10bd3e296194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</table>
+        <value>{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>060965c1db6dd11038a10bd3e296198c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>a609a5c1db6dd11038a10bd3e296194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>060965c1db6dd11038a10bd3e296198c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>e209a5c1db6dd11038a10bd3e296194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=060965c1db6dd11038a10bd3e296198c^sys_idNOT IN8e0965c1db6dd11038a10bd3e29619b6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</action>
+        <cid>f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>8e0965c1db6dd11038a10bd3e29619b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8e0965c1db6dd11038a10bd3e29619b6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8e0965c1db6dd11038a10bd3e29619b6</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>5e0965c1db6dd11038a10bd3e29619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+var parser = new sn_impex.GlideExcelParser();
+
+var attachment = new GlideSysAttachment();
+
+// Use the attachment sys_id of an Excel file
+var attachmentStream = attachment.getContentStream(inputs.file);
+
+// Set the source to be parsed
+parser.setSource(attachmentStream);
+
+// Get the worksheet names to be parsed in the Excel document
+var list_sheet_name = parser.getSheetNames();
+
+gs.info(" Sheet Names " + list_sheet_name.join(", "));
+
+// Iterate over each worksheet in the Excel workbook
+for (var i = 0; i &lt; list_sheet_name.length; i++) {
+    gs.info("*****************************************************************");
+    gs.info("Sheet name:    " + list_sheet_name[i]);
+
+// Set the worksheet name to be parsed
+    parser.setSheetName(list_sheet_name[i]);
+
+// Parse each worksheet set using setSheetName()
+    if (parser.parse()) {
+        //retrieve the column headers
+        var headers = parser.getColumnHeaders();
+        var header1 = headers[0];
+        var header2 = headers[1];
+        var header3 = headers[2];
+
+        //print headers
+        gs.info(header1 + "\t||" + header2 + "\t||" + header3);
+
+        // Iterate over each row in the worksheet
+      	var svcNodes = [];
+        while (parser.next()) {
+            var row = parser.getRow();
+            var nodeObject = {};
+            //print row value for both columns   
+            //gs.info(row[header1] + '\t|| ' + row[header2] + '\t||' + row[header3])
+            if(row[header3]){
+              nodeObject.tax = row[header1];	
+          	  nodeObject.service = row[header2];
+          	  nodeObject.offering = row[header3];
+              svcNodes.push(nodeObject);
+            }        
+        }
+        // gs.info("Offerings Are: " + offerings.length);
+       
+      	outputs.nodes = svcNodes;
+
+    } else
+        gs.info(parser.getErrorMessage());
+}
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8e0965c1db6dd11038a10bd3e29619b6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>d20965c1db6dd11038a10bd3e29619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8e0965c1db6dd11038a10bd3e29619b6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8e0965c1db6dd11038a10bd3e29619b6</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>1a0965c1db6dd11038a10bd3e29619e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>8e0965c1db6dd11038a10bd3e29619b6</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>5a0965c1db6dd11038a10bd3e29619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8e0965c1db6dd11038a10bd3e29619b6</table>
+        <value>{{action.excel_file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8e0965c1db6dd11038a10bd3e29619b6</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>520965c1db6dd11038a10bd3e29619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8e0965c1db6dd11038a10bd3e29619b6^id=8e0965c1db6dd11038a10bd3e29619b6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=8e0965c1db6dd11038a10bd3e29619b6"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8e0965c1db6dd11038a10bd3e29619b6^sys_idNOT IN8a0965c1db6dd11038a10bd3e29619ba"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">8e0965c1db6dd11038a10bd3e29619b6</model>
+        <model_id>8e0965c1db6dd11038a10bd3e29619b6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8e0965c1db6dd11038a10bd3e29619b6</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>8a0965c1db6dd11038a10bd3e29619ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8e0965c1db6dd11038a10bd3e29619b6^sys_idNOT INde0965c1db6dd11038a10bd3e29619cf"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Node,child_name=node,child_type=object,child_type_label=Object,child_uiUniqueId=2cb48d00-9763-4ab6-a667-9ba5486909c5,co_type_name=FDda0965c1396dd1109f87e9dbbc2a83cc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=2f35fb24-63a6-4643-8738-11801eab36bf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>nodes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Nodes</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">8e0965c1db6dd11038a10bd3e29619b6</model>
+        <model_id>8e0965c1db6dd11038a10bd3e29619b6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8e0965c1db6dd11038a10bd3e29619b6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>de0965c1db6dd11038a10bd3e29619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8e0965c1db6dd11038a10bd3e29619b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_8e0965c1db6dd11038a10bd3e29619b6^sys_idNOT INda0965c1db6dd11038a10bd3e29619d4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>nodes</element>
+        <help/>
+        <hint/>
+        <label>Nodes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_8e0965c1db6dd11038a10bd3e29619b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_id>da0965c1db6dd11038a10bd3e29619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=060965c1db6dd11038a10bd3e296198c^sys_idNOT IN4a0965c1db6dd11038a10bd3e29619ac"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5a0a3766-3d09-49d6-88d1-496466e024ac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>excel_file</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Excel File ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</model>
+        <model_id>060965c1db6dd11038a10bd3e296198c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_060965c1db6dd11038a10bd3e296198c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:13</sys_created_on>
+        <sys_id>4a0965c1db6dd11038a10bd3e29619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4a0965c1db6dd11038a10bd3e29619ac"/>
+    <sys_hub_action_output action="delete_multiple" query="model=060965c1db6dd11038a10bd3e296198c^sys_idNOT IN160965c1db6dd11038a10bd3e29619ef,1a09a5c1db6dd11038a10bd3e296191a,aa09a5c1db6dd11038a10bd3e2961947"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD1e0965c1166dd110540fc7c5924a1bea,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=9d6a5b99-d056-40b6-832d-7e721e2325e7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</model>
+        <model_id>060965c1db6dd11038a10bd3e296198c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>160965c1db6dd11038a10bd3e29619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=160965c1db6dd11038a10bd3e29619ef"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=160965c1db6dd11038a10bd3e29619ef"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=16b70e64-15d4-4d36-8f25-3dc4b5996b5b,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Nodes</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</model>
+        <model_id>060965c1db6dd11038a10bd3e296198c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>1a09a5c1db6dd11038a10bd3e296191a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1a09a5c1db6dd11038a10bd3e296191a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1a09a5c1db6dd11038a10bd3e296191a"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Node,child_name=node,child_type=object,child_type_label=Object,child_uiUniqueId=2cb48d00-9763-4ab6-a667-9ba5486909c5,co_type_name=FD9e0965c10c6dd1109ba3102762c9bbec,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1,sourceType=step,sourceUiUniqueId=2f35fb24-63a6-4643-8738-11801eab36bf,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b63a47e0-5e0a-4618-8992-5559242b73bc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>nodes</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Nodes</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</model>
+        <model_id>060965c1db6dd11038a10bd3e296198c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>aa09a5c1db6dd11038a10bd3e2961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aa09a5c1db6dd11038a10bd3e2961947"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aa09a5c1db6dd11038a10bd3e2961947"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=060965c1db6dd11038a10bd3e296198c"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=060965c1db6dd11038a10bd3e296198c^sys_idNOT INee09a5c1db6dd11038a10bd3e2961951"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</action_type_id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>ee09a5c1db6dd11038a10bd3e2961951</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=ee09a5c1db6dd11038a10bd3e2961951"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_060965c1db6dd11038a10bd3e296198c^sys_idNOT IN060965c1db6dd11038a10bd3e29619b4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>excel_file</element>
+        <help/>
+        <hint/>
+        <label>Excel File ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_060965c1db6dd11038a10bd3e296198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:13</sys_created_on>
+        <sys_id>060965c1db6dd11038a10bd3e29619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_060965c1db6dd11038a10bd3e296198c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c^sys_idNOT IN5a09a5c1db6dd11038a10bd3e2961919,6e09a5c1db6dd11038a10bd3e296194b,a609a5c1db6dd11038a10bd3e2961921"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>5a09a5c1db6dd11038a10bd3e2961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>nodes</element>
+        <help/>
+        <hint/>
+        <label>Nodes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>6e09a5c1db6dd11038a10bd3e296194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Nodes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:15</sys_created_on>
+        <sys_id>a609a5c1db6dd11038a10bd3e2961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:41:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=060965c1db6dd11038a10bd3e296198c"/>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>parse_excel_file</internal_name>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":"","reference_display":"","base_type":"file_attachment","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.excel_file}}","label":"action➛Excel File ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5a0a3766-3d09-49d6-88d1-496466e024ac"}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].data.Taxonomy_Node}}","label":"step➛Script step➛data➛Taxonomy Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].service}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].variable1}}","label":"step➛Script step➛variable1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Tax_Nodes.variable_child0.variable_child0_child1}}","label":"step➛Script step➛Tax Nodes➛variable_child0➛variable_child0_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Tax_Nodes}}","label":"step➛Script step➛Tax Nodes","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Tax_Nodes.Tax_Node}}","label":"step➛Script step➛Tax Nodes➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].services}}","label":"step➛Script step➛Services","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Services.Service}}","label":"step➛Script step➛Services➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Service_Offerings}}","label":"step➛Script step➛Service Offerings","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Services}}","label":"step➛Script step➛Services","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Service_Offerings.Service_Offering}}","label":"step➛Script step➛Service Offerings➛Service Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node}}","label":"step➛Script step➛Node","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.node_child1}}","label":"step➛Script step➛Node➛Node_child1","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Tax_Nodes1}}","label":"step➛Script step➛Node➛Tax Nodes","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_nodes}}","label":"step➛Script step➛Node➛Tax Nodes","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_nodes.Tax_Node}}","label":"step➛Script step➛Node➛Tax Nodes➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_nodes.tax_node}}","label":"step➛Script step➛Node➛Tax Nodes➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.node_child2}}","label":"step➛Script step➛Node➛Node_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Services3}}","label":"step➛Script step➛Node➛Services","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Tax_Node}}","label":"step➛Script step➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.tax_node}}","label":"step➛Script step➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Service}}","label":"step➛Script step➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.service}}","label":"step➛Script step➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.node_child3}}","label":"step➛Script step➛Node➛Node_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.Offering}}","label":"step➛Script step➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Node.offering}}","label":"step➛Script step➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].a}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Nodes}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].Nodes11}}","label":"step➛Script step➛Nodes","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes}}","label":"step➛Script step➛Nodes","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.Node9}}","label":"step➛Script step➛Nodes➛Node","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node}}","label":"step➛Script step➛Nodes➛Node","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.node_child1}}","label":"step➛Script step➛Nodes➛Node➛Node_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Tax_Node}}","label":"step➛Script step➛Nodes➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.tax_node}}","label":"step➛Script step➛Nodes➛Node➛Tax Node","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.node_child2}}","label":"step➛Script step➛Nodes➛Node➛Node_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Service}}","label":"step➛Script step➛Nodes➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.service}}","label":"step➛Script step➛Nodes➛Node➛Service","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.node_child3}}","label":"step➛Script step➛Nodes➛Node➛Node_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Offering}}","label":"step➛Script step➛Nodes➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.offering}}","label":"step➛Script step➛Nodes➛Node➛Offering","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.Tax}}","label":"step➛Script step➛Nodes➛Node➛Tax","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes.node.tax}}","label":"step➛Script step➛Nodes➛Node➛Tax","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Parse Excel File</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>793ca549db6dd11038a10bd3e2961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:07</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=793ca549db6dd11038a10bd3e2961921"/>
+    <sys_variable_value action="delete_multiple" query="document_key=793ca549db6dd11038a10bd3e2961921"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>793ca549db6dd11038a10bd3e2961921</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>9a3ca549db6dd11038a10bd3e2961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD863ca549f26dd110a2db3cd9283abf5e":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD863ca549f26dd110a2db3cd9283abf5e.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"9d6a5b99-d056-40b6-832d-7e721e2325e7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD863ca549f26dd110a2db3cd9283abf5e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">c23ca549db6dd11038a10bd3e296196f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>793ca549db6dd11038a10bd3e2961921</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>d63ca549db6dd11038a10bd3e2961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Nodes">4e3ca549db6dd11038a10bd3e2961974</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=793ca549db6dd11038a10bd3e2961921"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>nodes</field>
+        <id>793ca549db6dd11038a10bd3e2961921</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>de3ca549db6dd11038a10bd3e296198f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</table>
+        <value>{{step[f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1].nodes}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>793ca549db6dd11038a10bd3e2961921</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>563ca549db6dd11038a10bd3e2961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>793ca549db6dd11038a10bd3e2961921</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>923ca549db6dd11038a10bd3e2961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=793ca549db6dd11038a10bd3e2961921^sys_idNOT IN393ca549db6dd11038a10bd3e296192c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Parse Excel File">793ca549db6dd11038a10bd3e2961921</action>
+        <cid>f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:08</sys_created_on>
+        <sys_id>393ca549db6dd11038a10bd3e296192c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=393ca549db6dd11038a10bd3e296192c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>393ca549db6dd11038a10bd3e296192c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>863ca549db6dd11038a10bd3e296195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+var parser = new sn_impex.GlideExcelParser();
+
+var attachment = new GlideSysAttachment();
+
+// Use the attachment sys_id of an Excel file
+var attachmentStream = attachment.getContentStream(inputs.file);
+
+// Set the source to be parsed
+parser.setSource(attachmentStream);
+
+// Get the worksheet names to be parsed in the Excel document
+var list_sheet_name = parser.getSheetNames();
+
+gs.info(" Sheet Names " + list_sheet_name.join(", "));
+
+// Iterate over each worksheet in the Excel workbook
+for (var i = 0; i &lt; list_sheet_name.length; i++) {
+    gs.info("*****************************************************************");
+    gs.info("Sheet name:    " + list_sheet_name[i]);
+
+// Set the worksheet name to be parsed
+    parser.setSheetName(list_sheet_name[i]);
+
+// Parse each worksheet set using setSheetName()
+    if (parser.parse()) {
+        //retrieve the column headers
+        var headers = parser.getColumnHeaders();
+        var header1 = headers[0];
+        var header2 = headers[1];
+        var header3 = headers[2];
+
+        //print headers
+        gs.info(header1 + "\t||" + header2 + "\t||" + header3);
+
+        // Iterate over each row in the worksheet
+      	var svcNodes = [];
+        while (parser.next()) {
+            var row = parser.getRow();
+            var nodeObject = {};
+            //print row value for both columns   
+            //gs.info(row[header1] + '\t|| ' + row[header2] + '\t||' + row[header3])
+            if(row[header3]){
+              nodeObject.tax = row[header1];	
+          	  nodeObject.service = row[header2];
+          	  nodeObject.offering = row[header3];
+              svcNodes.push(nodeObject);
+            }        
+        }
+        // gs.info("Offerings Are: " + offerings.length);
+       
+      	outputs.nodes = svcNodes;
+
+    } else
+        gs.info(parser.getErrorMessage());
+}
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>393ca549db6dd11038a10bd3e296192c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>8e3ca549db6dd11038a10bd3e2961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=393ca549db6dd11038a10bd3e296192c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>393ca549db6dd11038a10bd3e296192c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:08</sys_created_on>
+        <sys_id>463ca549db6dd11038a10bd3e2961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file</field>
+        <id>393ca549db6dd11038a10bd3e296192c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>823ca549db6dd11038a10bd3e296195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_393ca549db6dd11038a10bd3e296192c</table>
+        <value>{{action.excel_file}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>393ca549db6dd11038a10bd3e296192c</id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>0e3ca549db6dd11038a10bd3e2961959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_393ca549db6dd11038a10bd3e296192c^id=393ca549db6dd11038a10bd3e296192c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=393ca549db6dd11038a10bd3e296192c"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=393ca549db6dd11038a10bd3e296192c^sys_idNOT IN713ca549db6dd11038a10bd3e2961930"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>file</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">393ca549db6dd11038a10bd3e296192c</model>
+        <model_id>393ca549db6dd11038a10bd3e296192c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_393ca549db6dd11038a10bd3e296192c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:08</sys_created_on>
+        <sys_id>713ca549db6dd11038a10bd3e2961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=393ca549db6dd11038a10bd3e296192c^sys_idNOT INbd3ca549db6dd11038a10bd3e2961937"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Node,child_name=node,child_type=object,child_type_label=Object,child_uiUniqueId=2cb48d00-9763-4ab6-a667-9ba5486909c5,co_type_name=FD353ca549bd6dd110ad2e1fa35304d335,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=2f35fb24-63a6-4643-8738-11801eab36bf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>nodes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Nodes</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">393ca549db6dd11038a10bd3e296192c</model>
+        <model_id>393ca549db6dd11038a10bd3e296192c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_393ca549db6dd11038a10bd3e296192c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:08</sys_created_on>
+        <sys_id>bd3ca549db6dd11038a10bd3e2961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=393ca549db6dd11038a10bd3e296192c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_393ca549db6dd11038a10bd3e296192c^sys_idNOT IN063ca549db6dd11038a10bd3e2961955"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>nodes</element>
+        <help/>
+        <hint/>
+        <label>Nodes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_393ca549db6dd11038a10bd3e296192c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:08</sys_created_on>
+        <sys_id>063ca549db6dd11038a10bd3e2961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=793ca549db6dd11038a10bd3e2961921^sys_idNOT IN793ca549db6dd11038a10bd3e2961925"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5a0a3766-3d09-49d6-88d1-496466e024ac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>excel_file</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Excel File ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Excel File">793ca549db6dd11038a10bd3e2961921</model>
+        <model_id>793ca549db6dd11038a10bd3e2961921</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_793ca549db6dd11038a10bd3e2961921</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:08</sys_created_on>
+        <sys_id>793ca549db6dd11038a10bd3e2961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=793ca549db6dd11038a10bd3e2961925"/>
+    <sys_hub_action_output action="delete_multiple" query="model=793ca549db6dd11038a10bd3e2961921^sys_idNOT IN4e3ca549db6dd11038a10bd3e2961974,c23ca549db6dd11038a10bd3e296196f,ca3ca549db6dd11038a10bd3e2961988"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=16b70e64-15d4-4d36-8f25-3dc4b5996b5b,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Nodes</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Parse Excel File">793ca549db6dd11038a10bd3e2961921</model>
+        <model_id>793ca549db6dd11038a10bd3e2961921</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>4e3ca549db6dd11038a10bd3e2961974</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e3ca549db6dd11038a10bd3e2961974"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4e3ca549db6dd11038a10bd3e2961974"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD863ca549f26dd110a2db3cd9283abf5e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=9d6a5b99-d056-40b6-832d-7e721e2325e7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parse Excel File">793ca549db6dd11038a10bd3e2961921</model>
+        <model_id>793ca549db6dd11038a10bd3e2961921</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>c23ca549db6dd11038a10bd3e296196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c23ca549db6dd11038a10bd3e296196f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c23ca549db6dd11038a10bd3e296196f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Node,child_name=node,child_type=object,child_type_label=Object,child_uiUniqueId=2cb48d00-9763-4ab6-a667-9ba5486909c5,co_type_name=FDc63ca549066dd110858facd142b74960,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=f3f1f1bf-dd7b-4a9a-9d2c-7466be5e9da1,sourceType=step,sourceUiUniqueId=2f35fb24-63a6-4643-8738-11801eab36bf,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=b63a47e0-5e0a-4618-8992-5559242b73bc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>nodes</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Nodes</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parse Excel File">793ca549db6dd11038a10bd3e2961921</model>
+        <model_id>793ca549db6dd11038a10bd3e2961921</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>ca3ca549db6dd11038a10bd3e2961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ca3ca549db6dd11038a10bd3e2961988"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ca3ca549db6dd11038a10bd3e2961988"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=793ca549db6dd11038a10bd3e2961921"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=793ca549db6dd11038a10bd3e2961921^sys_idNOT IN9e3ca549db6dd11038a10bd3e2961992"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Parse Excel File">793ca549db6dd11038a10bd3e2961921</action_type_id>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>9e3ca549db6dd11038a10bd3e2961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=9e3ca549db6dd11038a10bd3e2961992"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_793ca549db6dd11038a10bd3e2961921^sys_idNOT IN393ca549db6dd11038a10bd3e296192a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>excel_file</element>
+        <help/>
+        <hint/>
+        <label>Excel File ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_793ca549db6dd11038a10bd3e2961921</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:08</sys_created_on>
+        <sys_id>393ca549db6dd11038a10bd3e296192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_793ca549db6dd11038a10bd3e2961921"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921^sys_idNOT IN4e3ca549db6dd11038a10bd3e2961987,8e3ca549db6dd11038a10bd3e296198c,ce3ca549db6dd11038a10bd3e2961973"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Nodes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>4e3ca549db6dd11038a10bd3e2961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>nodes</element>
+        <help/>
+        <hint/>
+        <label>Nodes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>8e3ca549db6dd11038a10bd3e296198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:09</sys_created_on>
+        <sys_id>ce3ca549db6dd11038a10bd3e2961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_793ca549db6dd11038a10bd3e2961921"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>060965c1db6dd11038a10bd3e296198c</sys_id>
+        <latest_snapshot>793ca549db6dd11038a10bd3e2961921</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch4b-07-19-2022_08-09-2022_1837.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

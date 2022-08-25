@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDda0965c1396dd1109f87e9dbbc2a83cc</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>ef1729cddb2dd11038a10bd3e296198f</scope_name>
+        <serialized_content>{"FlowDesigner:FDda0965c1396dd1109f87e9dbbc2a83cc":{"$COCollectionField":[{"node":{"service":"String","service.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Service\",\"mandatory\":\"false\",\"child_name\":\"service_child0\",\"uiUniqueId\":\"7fe3363c-528b-4b5b-94f0-ec9ec210d7a5\",\"uiTypeLabel\":\"String\",\"child_label\":\"Service_child0\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a913ee8f-c989-4ff4-91eb-f36c80db5ca3\"}"},"offering":"String","offering.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Offering\",\"mandatory\":\"false\",\"child_name\":\"offering_child0\",\"uiUniqueId\":\"d369f3a7-dd62-4ae8-8510-00fc792fbbbd\",\"uiTypeLabel\":\"String\",\"child_label\":\"Offering_child0\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"881f8d7b-56b6-4495-b161-34fafe4bab8b\"}"},"tax":"String","tax.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Tax\",\"mandatory\":\"false\",\"child_name\":\"tax_child0\",\"uiUniqueId\":\"493830be-3abe-4fe1-a1c0-95d7b62cbe9d\",\"uiTypeLabel\":\"String\",\"child_label\":\"Tax_child0\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"child_type\":\"string\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"467273b1-d398-4fad-aac2-a28c8eef6714\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Nodes\",\"mandatory\":\"false\",\"child_name\":\"node\",\"uiUniqueId\":\"2f35fb24-63a6-4643-8738-11801eab36bf\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDda0965c1396dd1109f87e9dbbc2a83cc\",\"child_label\":\"Node\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2cb48d00-9763-4ab6-a667-9ba5486909c5\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDda0965c1396dd1109f87e9dbbc2a83cc.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Nodes\",\"mandatory\":\"false\",\"child_name\":\"node\",\"uiUniqueId\":\"2f35fb24-63a6-4643-8738-11801eab36bf\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDda0965c1396dd1109f87e9dbbc2a83cc\",\"child_label\":\"Node\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"2cb48d00-9763-4ab6-a667-9ba5486909c5\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9e0965c1db6dd11038a10bd3e29619cc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FDda0965c1396dd1109f87e9dbbc2a83cc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name>sys_complex_object_9e0965c1db6dd11038a10bd3e29619cc</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:06</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>
