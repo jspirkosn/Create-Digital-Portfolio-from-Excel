@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1e0965c1166dd110540fc7c5924a1bea</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>ef1729cddb2dd11038a10bd3e296198f</scope_name>
+        <serialized_content>{"FlowDesigner:FD1e0965c1166dd110540fc7c5924a1bea":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD1e0965c1166dd110540fc7c5924a1bea.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"9d6a5b99-d056-40b6-832d-7e721e2325e7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1e0965c1166dd110540fc7c5924a1bea\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:41:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>de0965c1db6dd11038a10bd3e29619ea</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FD1e0965c1166dd110540fc7c5924a1bea</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name>sys_complex_object_de0965c1db6dd11038a10bd3e29619ea</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:06</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
