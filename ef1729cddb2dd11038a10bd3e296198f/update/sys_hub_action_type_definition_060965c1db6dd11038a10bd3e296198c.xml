@@ -893,7 +893,26 @@ for (var i = 0; i &lt; list_sheet_name.length; i++) {
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_060965c1db6dd11038a10bd3e296198c"/>
-    <sys_hub_action_plan action="delete_multiple" query="action_id=060965c1db6dd11038a10bd3e296198c"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=060965c1db6dd11038a10bd3e296198c^sys_idNOT IN6e3ca549db6dd11038a10bd3e29619d1"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Parse Excel File">060965c1db6dd11038a10bd3e296198c</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"6e3ca549db6dd11038a10bd3e29619d1","name":"plan","plan_signature":null}}</plan>
+        <snapshot>d63ca549db6dd11038a10bd3e2961993</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:55:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6e3ca549db6dd11038a10bd3e29619d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:55:11</sys_updated_on>
+    </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>

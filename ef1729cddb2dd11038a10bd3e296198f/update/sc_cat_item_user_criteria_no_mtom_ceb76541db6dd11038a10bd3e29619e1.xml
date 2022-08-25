@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
     <sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Copy of Build a New Service Taxonomy">71b72541db6dd11038a10bd3e29619dd</sc_cat_item>
+        <sc_cat_item display_value="Build New Service Taxonomy">71b72541db6dd11038a10bd3e29619dd</sc_cat_item>
         <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2022-08-24 15:35:29</sys_created_on>

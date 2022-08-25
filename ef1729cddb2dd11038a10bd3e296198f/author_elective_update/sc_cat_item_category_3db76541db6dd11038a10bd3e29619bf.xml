@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Copy of Build a New Service Taxonomy">71b72541db6dd11038a10bd3e29619dd</sc_cat_item>
+        <sc_category display_value="Can We Help You ?">aef224aadb55d8504327198d139619b1</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:35:28</sys_created_on>
+        <sys_id>3db76541db6dd11038a10bd3e29619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You ?.Copy of Build a New Service Taxonomy</sys_name>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_update_name>sc_cat_item_category_3db76541db6dd11038a10bd3e29619bf</sys_update_name>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:35:28</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</application>
+        <file_path/>
+        <instance_id>a3fdc7e0db2a1814601a11f84896194b</instance_id>
+        <instance_name>dswrkgrpdemo</instance_name>
+        <name>sc_cat_item_category_3db76541db6dd11038a10bd3e29619bf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Build a New Service Taxonomy">71b72541db6dd11038a10bd3e29619dd</sc_cat_item><sc_category display_value="Can We Help You ?">aef224aadb55d8504327198d139619b1</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>jspirko</sys_created_by><sys_created_on>2022-08-24 15:35:28</sys_created_on><sys_id>3db76541db6dd11038a10bd3e29619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Can We Help You ?.Copy of Build a New Service Taxonomy</sys_name><sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package><sys_policy/><sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope><sys_update_name>sc_cat_item_category_3db76541db6dd11038a10bd3e29619bf</sys_update_name><sys_updated_by>jspirko</sys_updated_by><sys_updated_on>2022-08-24 15:35:28</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-464196453</payload_hash>
+        <record_name>Can We Help You ?.Copy of Build a New Service Taxonomy</record_name>
+        <reverted_from/>
+        <source>7b17a101db6dd11038a10bd3e296198c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 15:35:29</sys_created_on>
+        <sys_id>f1b76541db6dd11038a10bd3e29619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182d07e86190000001</sys_recorded_at>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 15:35:29</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>f9b76541506dd110b0a9b96772e53ac6</update_guid>
+        <update_guid_history>f9b76541506dd110b0a9b96772e53ac6:-464196453</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-08-24 13:38:07">0bfce641dbe1151038a10bd3e2961931</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jspirko</sys_created_by>
+        <sys_created_on>2022-08-24 20:38:07</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>c261666856b8405ea55d7fb53833fa24</sys_id>
+        <sys_metadata>3db76541db6dd11038a10bd3e29619bf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You ?.Copy of Build a New Service Taxonomy</sys_name>
+        <sys_package display_value="Service Portfolio Build" source="x_snc_svc_port_b">ef1729cddb2dd11038a10bd3e296198f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
+        <sys_scope_delete display_value="">381f9e68d3724b8c907782e39c958479</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_3db76541db6dd11038a10bd3e29619bf</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_3db76541db6dd11038a10bd3e29619bf">f1b76541db6dd11038a10bd3e29619c7</sys_update_version>
+        <sys_updated_by>jspirko</sys_updated_by>
+        <sys_updated_on>2022-08-24 20:38:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
