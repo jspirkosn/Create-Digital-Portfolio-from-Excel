@@ -13,7 +13,7 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description/>
+        <description><![CDATA[<p><a href="https://hsview.servicenow.com/viewer/633555d88fbad6a4a3611a33" rel="nofollow">Template File</a></p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <flow_designer_flow display_value="Import Service Taxonomy from Excel">6049adc1db6dd11038a10bd3e2961957</flow_designer_flow>
@@ -58,7 +58,7 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <short_description/>
+        <short_description>Upload an excel template of a Service Portfolio</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state/>
@@ -66,14 +66,11 @@
         <sys_created_by>jspirko</sys_created_by>
         <sys_created_on>2022-08-24 15:35:28</sys_created_on>
         <sys_id>71b72541db6dd11038a10bd3e29619dd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
         <sys_name>Build New Service Taxonomy</sys_name>
         <sys_package display_value="Microsoft 365 Excel Spoke" source="sn_ms_excel_spoke">aaddf20a073010102144a2324dd3006f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Service Portfolio Build">ef1729cddb2dd11038a10bd3e296198f</sys_scope>
         <sys_update_name>sc_cat_item_71b72541db6dd11038a10bd3e29619dd</sys_update_name>
-        <sys_updated_by>jspirko</sys_updated_by>
-        <sys_updated_on>2022-08-24 20:38:07</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
